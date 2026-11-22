@@ -1,1 +1,34 @@
+# Variable
+current_day = 2
 
+# Strings
+project_title = "Raspberry Pi 5 100 Day Engineering Portfolio"
+topic = "Data Types and Variables"
+
+# Integers
+total_days = 100
+days_remaining = total_days - current_day
+
+# Floats
+cpu_temperature = 41.8
+target_voltage = 3.3
+
+# Booleans
+is_hardware_connected = True
+is_project_complete = False
+
+# Displaying variables with string formatting
+print("----- Project Status Report -----")
+print(f"Project: {project_title}")
+print(f"Topic: {topic}")
+print(f"Current Day: {current_day} of {total_days}")
+print(f"Days Remaining: {days_remaining}")
+print(f"Pi CPU Temperature: {cpu_temperature}°C")
+print(f"Hardware Connected: {is_hardware_connected}")
+
+# Inspecting data types
+print("\n----- Data Type Inspection -----")
+print(type(project_title))
+print(type(current_day))
+print(type(cpu_temperature))
+print(type(is_hardware_connected))
