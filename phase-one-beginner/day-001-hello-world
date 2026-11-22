@@ -1,1 +1,15 @@
+# Print statements
+print("Hello, Raspberry Pi 5!")
+print("Welcome to my 100-day engineering portfolio.")
 
+#Variables
+project_name = "Day 1 Hello World" # String
+day_number = 1 # Integer
+is_completed = False # Boolean
+pi_version = 5.0 # Float
+
+# String formatting
+print(f"Project: {project_name}")
+print(f"Day: {day_number}")
+print(f"Completed: {is_completed}")
+print(f"Pi Version: {pi_version}")
