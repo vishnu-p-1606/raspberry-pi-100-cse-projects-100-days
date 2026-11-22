@@ -1,1 +1,26 @@
+# User Input
+user_name = input("Enter your name:")
+print(f"Hello, {user_name}! Welcome to Day 3!")
 
+# Trying to add numbers using user input
+num1 = input("Enter first number:")
+num2 = input("Enter second number:")
+
+result = num1 + num2
+print(f"Result of adding strings: {result}")
+
+# Type Casting converting strings to integers
+num1 = int(input("Enter first whole number:"))
+num2 = int(input("Enter second whole number:"))
+
+result = num1 + num2
+print(f"The mathematical sum is: {result}")
+
+# Arithmetic Operators
+voltage = float(input("Enter measured voltage (V): "))
+current = float(input("Enter measured current (A): "))
+
+resistance = voltage / current # Fun Fact: This is Ohm's Law
+
+print(f"\n----- Engineering Calculation -----")
+print(f"Calculated Resistance: {resistance:.2f} Ohms")
