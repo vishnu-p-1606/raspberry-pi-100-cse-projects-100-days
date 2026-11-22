@@ -1,1 +1,24 @@
+# If Statement
+cpu_temp = 65.0
 
+if cpu_temp > 60.0:
+    print("Warning: CPU temperature is running warm!")
+
+# Adding else
+if cpu_temp > 75.0:
+    print("CRITICAL: Overheating detected!")
+else:
+    print("Status: CPU temperature is within normal operating limits.")
+
+current_temp = 55.0
+
+# If/elif/else Statements
+print(f"\n----- Checking Pi 5 Thermal Status -----")
+if current_temp > 80.0:
+    print("EMERGENCY: Thermal throttling imminent! Shutting down processes.")
+elif current_temp > 70.0:
+    print("WARNING: Temperature is elevated. Turning on cooling fan.")
+elif current_temp > 50.0:
+    print("NORMAL: System is running warm under load, but safe.")
+else:
+    print("OPTIMAL: System temperature is running cool.")
