@@ -12,4 +12,4 @@ pi_temperature = 42.5 # Float
 print(f"Project: {project_name}")
 print(f"Day: {day_number}")
 print(f"Completed: {is_completed}")
-print(f"Pi Temperature: {pi_temperature}")
+print(f"Pi Temperature: {pi_temperature}°C")
