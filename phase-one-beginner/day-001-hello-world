@@ -6,10 +6,10 @@ print("Welcome to my 100-day engineering portfolio.")
 project_name = "Day 1 Hello World" # String
 day_number = 1 # Integer
 is_completed = False # Boolean
-pi_version = 5.0 # Float
+pi_temperature = 42.5 # Float
 
 # String formatting
 print(f"Project: {project_name}")
 print(f"Day: {day_number}")
 print(f"Completed: {is_completed}")
-print(f"Pi Version: {pi_version}")
+print(f"Pi Temperature: {pi_temperature}")
