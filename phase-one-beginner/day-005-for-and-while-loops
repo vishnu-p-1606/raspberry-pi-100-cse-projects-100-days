@@ -1,1 +1,33 @@
+# For loop with range()
+print("--- Counting up with For Loop ---")
+for i in range(5):
+    print(f"Current Count: {i}")
 
+# Looping through Lists
+sensors = ["DHT22 Temp", "HC-SR04 Ultrasonic", "PIR Motion", "I2C LCD"]
+
+print("\n--- Hardware Components ---")
+for sensor in sensors:
+    print(f"Checking status of: {sensor} [ONLINE]")
+
+# While Loop
+print("\n--- System Countdown ---")
+countdown = 3
+
+while countdown > 0:
+    print(f"T-minus {countdown}")
+    countdown -= 1
+
+print("We have liftoff!")
+
+# Break keyword
+print("\n--- Monitoring Sensor Data ---")
+attempts = 0
+
+while True:
+    attempts += 1
+    print(f"Monitoring attempt {attempts}")
+
+    if attempts >= 2:
+        print("Sensor connection established")
+        break # Exits infinite while loop
