@@ -1,1 +1,45 @@
+# Defining function with 'def' keyword
+def say_hello():
+    print("Initializing sensor telemetry node...")
+    print("System check: ONLINE")
 
+# Calling the function
+say_hello()
+say_hello()
+
+# Function with parameter (component_name)
+def check_hardware_status(component_name):
+    print(f"Diagnostics running for: {component_name}")
+    print(f"Status: [OK] - {component_name} is operating normally.\n")
+
+# Calling function with different arguments
+check_hardware_status("DHT22 Temperature Sensor")
+check_hardware_status("HC-SRO4 Ultrasonic Sensor")
+check_hardware_status("I2C 16x2 LCD Display")
+
+# Function that performs calculation and uses return statement
+def calculate_resistance(voltage, current):
+    resistance = voltage / current # Ohm's Law
+    return resistance
+
+measured_v = 5.0
+measured_i = 0.025
+
+# Using returned value
+calculated_r = calculate_resistance(measured_v, measured_i)
+
+print(f"\n--- Circuit Analysis ---")
+print(f"Applied Voltage: {measured_v} V")
+print(f"Measured Current: {measured_i} A")
+print(f"Calculated Resistance: {calculated_r} Ohms")
+
+# Global variable
+system_name = "Pi-Sentinel-Core"
+
+def test_scope():
+    # Local variable
+    sensor_count = 4
+    print(f"\nInside function - Global system name {system_name}")
+    print(f"Inside function - Local sensor count {sensor_count}")
+
+test_scope()
