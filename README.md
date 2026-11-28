@@ -1,1 +1,1 @@
-# raspberry-pi-100-cse-projects-100-days
+# raspberry-pi-100-days
